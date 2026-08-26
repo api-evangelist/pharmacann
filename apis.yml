@@ -1,8 +1,18 @@
 aid: pharmacann
 name: PharmaCann
-description: 'PharmaCann is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  PharmaCann is one of the largest vertically integrated cannabis companies in the United States,
+  founded in 2014 and operating cultivation centers, processing facilities and retail dispensaries
+  across eight states — Colorado, Illinois, Maryland, Massachusetts, Michigan, New York, Ohio and
+  Pennsylvania. The company runs nine cultivation and processing facilities (Denver CO, Dwight IL,
+  Lothian and Stevensville MD, Holliston MA, Warren MI, Hamptonburgh NY, Buckeye Lake OH and
+  Olyphant PA) and sells through two retail banners, LivWell (Colorado and Michigan) and Verilife
+  (Illinois, Maryland, Massachusetts, Michigan, New York, Ohio and Pennsylvania), alongside a house
+  of product brands including Matter, Magnitude, Full Melt, CAM, P3, LivWell Flower, Hash and
+  PC Nursery. PharmaCann is a physical-goods operator in a federally restricted, state-regulated
+  industry; it publishes no developer program, no public API and no machine-readable API contract.
 url: https://raw.githubusercontent.com/api-evangelist/pharmacann/refs/heads/main/apis.yml
+image: http://static1.squarespace.com/static/60736ce59afd9c3ea39b0d41/t/60a329cd64e66350b0f99fa1/1621305805736/PharmaCann+Social+Logo.png?format=1500w
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -12,6 +22,13 @@ created: '2026-08-26'
 modified: '2026-08-26'
 tags:
 - Company
+- Cannabis
+- Retail
+- Agriculture
+- Consumer Goods
+- Manufacturing
+- Health
+- Dispensary
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +37,55 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://forgeglobal.com/pharmacann_stock/
+  url: https://www.pharmacann.com/
+- type: About
+  url: https://www.pharmacann.com/about
+- type: Blog
+  url: https://www.pharmacann.com/news
+- type: BlogRSS
+  url: https://www.pharmacann.com/news?format=rss
+- type: Support
+  url: https://www.pharmacann.com/contact
+- type: TermsOfService
+  url: https://www.pharmacann.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.pharmacann.com/privacy-policy
+- type: GitHubOrganization
+  url: https://github.com/Pharmacann
+- type: LLMsTxt
+  url: llms/pharmacann-llms.txt
+- type: DomainSecurity
+  url: security/pharmacann-domain-security.yml
+
+x-enrichment:
+  date: '2026-08-26'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v1
+
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    PharmaCann is a vertically integrated cannabis cultivator, processor and dispensary operator
+    whose entire public web presence is a Squarespace marketing brochure — the sitemap lists 68
+    URLs, all news, brands, careers, store locator and legal pages, with no developer, API or
+    docs section — and neither api.pharmacann.com nor developer.pharmacann.com resolves in DNS.
+  evidence:
+  - url: https://www.pharmacann.com/sitemap.xml
+    status: 200
+  - url: https://www.pharmacann.com/openapi.json
+    status: 404
+  - url: https://www.pharmacann.com/api-docs
+    status: 404
+  - url: https://www.pharmacann.com/.well-known/agent-card.json
+    status: 404
+  - url: https://api.pharmacann.com/
+    status: 0
+  - url: https://developer.pharmacann.com/
+    status: 0
+  - url: https://www.verilife.com/openapi.json
+    status: 404
+  - url: https://www.livwell.com/openapi.json
+    status: 404
+  checked: '2026-08-26'

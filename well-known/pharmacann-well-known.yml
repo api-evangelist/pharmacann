@@ -1,0 +1,95 @@
+generated: '2026-08-26'
+method: probed
+source: >-
+  Direct unauthenticated GET of each /.well-known/ path on every PharmaCann-owned host
+  (corporate site plus the two retail banner sites, Verilife and LivWell). No path returned
+  a document on any host.
+hosts:
+- host: www.pharmacann.com
+  note: >-
+    Squarespace-hosted corporate marketing site. Every /.well-known/ path returns the site's
+    404 HTML shell, except /.well-known/security.txt which returns a Squarespace JSON stub
+    ({"message":"security.txt not found"}) with a 404 status. Neither is a document.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: www.verilife.com
+  note: >-
+    PharmaCann's Verilife retail dispensary banner (IL, MD, MA, MI, NY, OH, PA). Every
+    /.well-known/ path returns the storefront's 404 HTML shell.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: www.livwell.com
+  note: >-
+    PharmaCann's LivWell retail dispensary banner (CO, MI). Webflow-hosted; every
+    /.well-known/ path returns an "Invalid .well-known request" 404 page.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+summary:
+  hosts_probed: 3
+  paths_probed: 21
+  documents_found: 0
+  pointer_emitted: false
+  pointer_note: >-
+    No WellKnown or SecurityTxt pointer is wired in apis.yml. Every probe returned 404, and a
+    pointer would assert that PharmaCann serves a surface it does not serve. This file records
+    the measured absence.

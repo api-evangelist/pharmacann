@@ -1,0 +1,23 @@
+generated: '2026-08-26'
+method: searched
+source: >-
+  https://www.pharmacann.com/ sitemap.xml walked in full (2026-08-26) plus direct probes of
+  /docs, /api, /api-docs and developer.pharmacann.com. No developer, API or platform pricing
+  page exists on any PharmaCann-owned host.
+plan_count: 0
+plans: []
+note: >-
+  PharmaCann is a vertically integrated cannabis cultivator, processor and retailer. It sells
+  physical product through its LivWell and Verilife dispensaries, not API access, and publishes
+  no API product, no developer tier and no usage-based pricing of any kind. This is an honest
+  zero, not an unmeasured gap. No Plans pointer is wired in apis.yml because there is no API
+  product for a plan to attach to.
+evidence:
+- url: https://www.pharmacann.com/sitemap.xml
+  status: 200
+  finding: >-
+    68 URLs, all corporate/marketing (news, brands, careers, product locator, legal). No
+    pricing, plans, developer or API page.
+- url: https://developer.pharmacann.com/
+  status: 0
+  finding: DNS does not resolve.
