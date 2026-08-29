@@ -12,6 +12,17 @@ description: >-
   PC Nursery. PharmaCann is a physical-goods operator in a federally restricted, state-regulated
   industry; it publishes no developer program, no public API and no machine-readable API contract.
 url: https://raw.githubusercontent.com/api-evangelist/pharmacann/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: http://static1.squarespace.com/static/60736ce59afd9c3ea39b0d41/t/60a329cd64e66350b0f99fa1/1621305805736/PharmaCann+Social+Logo.png?format=1500w
 x-type: company
 x-source: harvest:secondary-market
