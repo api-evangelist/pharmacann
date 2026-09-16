@@ -16,6 +16,13 @@
       "method": "none"
     },
     {
+      "source": "https://www.pharmacann.com/news/atom.xml",
+      "feed_url": "https://www.pharmacann.com/news/atom.xml",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
       "source": "https://www.pharmacann.com/news?format=rss",
       "feed_url": "https://www.pharmacann.com/news?format=rss",
       "title": "",
@@ -24,5 +31,5 @@
     }
   ],
   "post_count": 20,
-  "fetched": "2026-09-06T19:17:18Z"
+  "fetched": "2026-09-13T13:00:00Z"
 }
